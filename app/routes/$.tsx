@@ -1,9 +1,7 @@
-import builderPkg, { BuilderComponent } from "@builder.io/react";
+import { builder, BuilderComponent } from "@builder.io/react";
 import type { LoaderFunctionArgs } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
-// @ts-expect-error not named exported
-const { builder } = builderPkg;
 // Initialize the Builder client and pass in your Public API Key
 builder.init("ad30f9a246614faaa6a03374f83554c9"); // <-- add your Public API Key here
 
